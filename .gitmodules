@@ -7,3 +7,15 @@
 [submodule "external/openal-soft"]
 	path = external/openal-soft
 	url = https://github.com/kcat/openal-soft.git
+[submodule "external/glm"]
+	path = external/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "external/json"]
+	path = external/json
+	url = https://github.com/nlohmann/json.git
+[submodule "external/bullet3"]
+	path = external/bullet3
+	url = https://github.com/bulletphysics/bullet3.git
+[submodule "external/stb"]
+	path = external/stb
+	url = https://github.com/nothings/stb.git
