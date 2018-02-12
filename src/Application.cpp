@@ -79,7 +79,6 @@ int Application::Run(int argc, char* argv[])
 void Application::Frame()
 {
     EventLoop();
-    printf("Frame()\n");
 }
 
 bool Application::Init()
