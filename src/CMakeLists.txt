@@ -4,11 +4,23 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 find_package(OpenGL REQUIRED)
 
 set(SHOOTER_SOURCE ${PROJECT_SOURCE_DIR}/src/glad.c
-			       ${PROJECT_SOURCE_DIR}/src/Application.cpp)
+				   ${PROJECT_SOURCE_DIR}/src/Application.cpp
+				   ${PROJECT_SOURCE_DIR}/src/logger.cpp
+				   ${PROJECT_SOURCE_DIR}/src/utility.cpp
+				   ${PROJECT_SOURCE_DIR}/src/GLRenderDevice.cpp)
 
 set(SHOOTER_HEADERS ${PROJECT_SOURCE_DIR}/src/glad.h
 				    ${PROJECT_SOURCE_DIR}/src/khrplatform.h
-				    ${PROJECT_SOURCE_DIR}/src/Application.h)
+					${PROJECT_SOURCE_DIR}/src/Application.h
+					${PROJECT_SOURCE_DIR}/src/gfx_descs.h
+					${PROJECT_SOURCE_DIR}/src/gfx_enums.h
+					${PROJECT_SOURCE_DIR}/src/gfx_types_gl4.h
+					${PROJECT_SOURCE_DIR}/src/gfx_types.h
+					${PROJECT_SOURCE_DIR}/src/GLRenderDevice.h
+					${PROJECT_SOURCE_DIR}/src/logger.h
+					${PROJECT_SOURCE_DIR}/src/Platform.h
+					${PROJECT_SOURCE_DIR}/src/RenderDevice.h
+					${PROJECT_SOURCE_DIR}/src/utility.h)
 
 add_executable(ArenaShooter ${SHOOTER_HEADERS} ${SHOOTER_SOURCE})				
 
