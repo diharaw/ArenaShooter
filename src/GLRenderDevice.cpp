@@ -194,7 +194,6 @@ bool RenderDevice::init()
 	}
 	else
 	{
-        glEnable(GL_MULTISAMPLE);
 		return true;
 	}
 }
